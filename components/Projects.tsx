@@ -26,23 +26,23 @@ const ProjectCard: React.FC<ProjectProps> = ({ id, title, category, image, color
         
         <div 
           className="relative w-full h-full overflow-hidden flex items-center justify-center transition-all duration-500"
-          style={{ backgroundColor: isFocusShield ? '#0a0a0a' : bgColor }}
+          style={{ backgroundColor: isFocusShield ? '#040404' : bgColor }}
         >
           {isFocusShield && (
             <>
               <div className="absolute inset-0 bg-[#050505]"></div>
-              <div className="absolute w-80 h-80 bg-blue-600/10 blur-[120px] rounded-full group-hover:bg-blue-600/20 transition-all duration-700"></div>
+              <div className="absolute w-full h-full bg-blue-600/5 blur-[100px] rounded-full group-hover:bg-blue-600/15 transition-all duration-700"></div>
             </>
           )}
           
           <img 
             src={image} 
             alt={title} 
-            className={`w-full h-full transition-all duration-1000 ease-out z-10 mix-blend-lighten ${
+            className={`w-full h-full transition-all duration-1000 ease-out z-10 ${
               isFocusShield 
-                ? 'scale-[1.4] group-hover:scale-[1.3] object-contain' 
+                ? 'scale-[1.6] group-hover:scale-[1.5] object-cover object-center' 
                 : objectFit === "contain" 
-                  ? `${customScale || 'scale-125'} group-hover:scale-[1.15]` 
+                  ? `${customScale || 'scale-125'} group-hover:scale-[1.15] object-contain` 
                   : 'object-cover scale-100 group-hover:scale-[1.05]'
             }`}
           />
@@ -80,7 +80,7 @@ const Projects: React.FC<{onProjectClick?: (id: string) => void}> = ({ onProject
       description: "A revolutionary digital wellness app designed to reduce screen time and improve mental focus through AI-driven habit coaching.",
       color: "#2563eb",
       bgColor: "#0a0a0a", 
-      objectFit: "contain" as const,
+      objectFit: "cover" as const,
       isFocusShield: true 
     },
     {
