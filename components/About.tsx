@@ -100,7 +100,7 @@ const About: React.FC<AboutProps> = ({ onContactClick }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {/* Motion Design */}
           <a 
             href="https://www.behance.net/romaingras" 
@@ -157,6 +157,36 @@ const About: React.FC<AboutProps> = ({ onContactClick }) => {
               <h3 className="text-xl md:text-2xl font-heading font-black uppercase tracking-tighter text-white mb-3 group-hover:text-blue-500 transition-colors">Music</h3>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-md font-medium">
                 I produce electronic music as a way to explore rhythm, mood, and storytelling in another medium.
+              </p>
+            </div>
+          </a>
+
+          {/* YouTube Channel */}
+          <a 
+            href="https://www.youtube.com/@Sesotris" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="group space-y-6 block"
+          >
+            <div className="relative aspect-[16/11] rounded-[2.5rem] overflow-hidden border border-white/10 glass-card">
+              <img 
+                src="https://res.cloudinary.com/di4iuss0t/image/upload/v1768491307/Youtube_yv5el3.png" 
+                alt="YouTube Channel" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                 <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-white">Watch on YouTube</span>
+                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                 </div>
+              </div>
+            </div>
+            <div className="px-4">
+              <h3 className="text-xl md:text-2xl font-heading font-black uppercase tracking-tighter text-white mb-3 group-hover:text-blue-500 transition-colors">YouTube</h3>
+              <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-md font-medium">
+                Documenting my creative journey and sharing design insights as <strong>Sesotris</strong>.
               </p>
             </div>
           </a>

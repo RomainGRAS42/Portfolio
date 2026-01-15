@@ -43,8 +43,6 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage, onContactClick
     }
   };
 
-  // Helper logic for standard navigation links (Portfolio & About)
-  // Portfolio link is white only if we are on 'home' page.
   const isPortfolioActive = currentPage === 'home';
   const isAboutActive = currentPage === 'about';
 
@@ -79,9 +77,6 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage, onContactClick
             className={`text-[10px] font-black uppercase tracking-[0.2em] transition-colors ${isAboutActive ? 'text-white' : 'text-zinc-400 hover:text-white'}`}
           >
             About
-          </a>
-          <a href="#" className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors">
-            Blog
           </a>
         </div>
 
