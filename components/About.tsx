@@ -154,7 +154,7 @@ const About: React.FC<AboutProps> = ({ onContactClick }) => {
               </div>
             </div>
             <div className="px-4">
-              <h3 className="text-xl md:text-2xl font-heading font-black uppercase tracking-tighter text-white mb-3 group-hover:text-blue-500 transition-colors">Music</h3>
+              <h3 className="text-xl md:text-2xl font-heading font-black uppercase tracking-tighter text-white mb-3 group-hover:text-blue-500 transition-colors">Soundcloud (Music)</h3>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-md font-medium">
                 I produce electronic music as a way to explore rhythm, mood, and storytelling in another medium.
               </p>
@@ -184,7 +184,7 @@ const About: React.FC<AboutProps> = ({ onContactClick }) => {
               </div>
             </div>
             <div className="px-4">
-              <h3 className="text-xl md:text-2xl font-heading font-black uppercase tracking-tighter text-white mb-3 group-hover:text-blue-500 transition-colors">YouTube</h3>
+              <h3 className="text-xl md:text-2xl font-heading font-black uppercase tracking-tighter text-white mb-3 group-hover:text-blue-500 transition-colors">YouTube Channel (Music)</h3>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-md font-medium">
                 Documenting my creative journey and sharing design insights as <strong>Sesotris</strong>.
               </p>
