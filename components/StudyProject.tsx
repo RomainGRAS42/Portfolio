@@ -19,7 +19,7 @@ const StudyProject: React.FC<StudyProjectProps> = ({ onOpenStudy }) => {
         <div className="order-2 lg:order-1">
           <span className="text-[8px] md:text-[10px] font-bold tracking-[0.3em] uppercase text-zinc-500 mb-4 md:mb-6 block group-hover:text-blue-500 transition-colors duration-300">Academic Highlights</span>
           <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tighter leading-tight uppercase mb-6 md:mb-8 text-white">
-            Bachelor UX/UI <br /> <span className="text-zinc-500 transition-colors group-hover:text-white/60">Study Showcase</span>
+            Bachelor UX/UI <br /> <span className="text-zinc-500 transition-colors group-hover:text-white/60">Study Showcase <br /> (In french)</span>
           </h2>
           <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
             This final year project demonstrates my ability to analyze markets, define user personas, and design end-to-end digital experiences.

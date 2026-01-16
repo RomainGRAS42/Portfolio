@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage, onContactClick
         <a 
           href="#" 
           onClick={(e) => { e.preventDefault(); handleNavigation('home'); }}
-          className={`text-[12px] font-black tracking-[0.3em] uppercase pl-2 rounded-lg px-2 transition-colors ${currentPage === 'home' ? 'text-white' : 'text-zinc-400 hover:text-white'}`}
+          className="text-[12px] font-black tracking-[0.3em] uppercase pl-2 rounded-lg px-2 transition-colors text-white"
         >
           RG
         </a>
