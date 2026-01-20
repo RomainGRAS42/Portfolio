@@ -103,7 +103,7 @@ const About: React.FC<AboutProps> = ({ onContactClick }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {/* Motion Design */}
           <a 
-            href="https://www.behance.net/romaingras" 
+            href="https://www.behance.net/romaingras1" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="group space-y-6 block"
