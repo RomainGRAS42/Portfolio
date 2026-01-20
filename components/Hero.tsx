@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import InteractiveText from './InteractiveText';
+import MouseTrailEffect from './MouseTrailEffect';
 
 interface HeroProps {
   onContactClick: () => void;
@@ -28,10 +29,17 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-28 pb-20 px-6 sm:px-10 md:px-16 overflow-hidden text-white">
+      
+      {/* Background Blob Effect - Keep existing but maybe slightly subtler if needed */}
       <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vw] bg-blue-600/5 rounded-full blur-[180px] pointer-events-none transition-transform duration-[2000ms] ease-out"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vw] bg-blue-600/5 rounded-full blur-[180px] pointer-events-none transition-transform duration-[2000ms] ease-out z-0"
         style={{ transform: `translate(${-50 + mousePos.x * 0.2}%, ${-50 + mousePos.y * 0.2}%)` }}
       ></div>
+
+      {/* Mouse Trail Effect - Desktop Only (lg and up) */}
+      <div className="hidden lg:block absolute inset-0 z-0 opacity-80">
+        <MouseTrailEffect />
+      </div>
 
       <div className="max-w-6xl w-full flex flex-col items-center text-center relative z-20">
         <div className="mb-8 md:mb-12 animate-reveal">
